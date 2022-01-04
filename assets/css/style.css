@@ -1,1 +1,270 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+/**
+ * YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
+ * http://cssreset.com
+ * Copyright 2012 Yahoo! Inc. All rights reserved.
+ * http://yuilibrary.com/license/
+ */
+/*
+TODO will need to remove settings on HTML since we can't namespace it.
+TODO with the prefix, should I group by selector or property for weight savings?
+*/
+html {
+  color: #000;
+  background: #fff;
+  overflow: scroll;
+  overflow: -moz-scrollbars-vertical;
+  overflow-x: scroll;
+}
+
+/*TODO remove settings on BODY since we can't namespace it.*/
+/*TODO test putting a class on HEAD.- Fails on FF.*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+/*TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...*/
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: "";
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* to preserve line-height and selector appearance */
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*to enable resizing for IE*/
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+
+/*because legend doesn't inherit in IE */
+legend {
+  color: #000;
+}
+
+#wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  margin: 0;
+  padding: 0;
+}
+
+/* YUI CSS Detection Stamp */
+#yui3-css-stamp.cssreset {
+  display: none;
+}
+
+/*補足*/
+a {
+  text-decoration: none;
+}
+
+body {
+  color: #fff;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1em;
+  background-color: #0F0F0F;
+}
+
+a {
+  color: #fff;
+}
+
+h2 {
+  font-size: 2.5em;
+  letter-spacing: 10px;
+  font-weight: 600;
+}
+
+.l-header {
+  background-color: #2C2C2C;
+}
+
+.l-footer__sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.l-footer__txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-accordion {
+  margin: 3em auto;
+  max-width: 60vw;
+}
+
+.c-accordion__toggle {
+  display: none;
+}
+
+.c-accordion__option {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.c-accordion .title,
+.c-accordion .content {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.c-accordion .title {
+  background-color: #2C2C2C;
+  padding: 1em;
+  display: block;
+  color: #fff;
+}
+
+.c-accordion .title::after,
+.c-accordion .title::before {
+  content: "";
+  position: absolute;
+  right: 1.25em;
+  top: 1.25em;
+  width: 2px;
+  height: 0.75em;
+  background-color: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.c-accordion .title::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.c-accordion .content {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.c-accordion .content p {
+  margin: 0;
+  padding: 0.5em 1em 1em;
+  font-size: 0.8em;
+  line-height: 1.5;
+  background-color: #2C2C2C;
+}
+
+.c-accordion__toggle:checked + .title + .content {
+  max-height: 500px;
+  -webkit-transition: all 2.5s;
+  transition: all 2.5s;
+}
+
+.c-accordion__toggle:checked + .title::before {
+  -webkit-transform: rotate(90deg) !important;
+          transform: rotate(90deg) !important;
+}
+
+.c-accordion__toggle:checked + .title::before {
+  -webkit-transform: rotate(45deg) !important;
+          transform: rotate(45deg) !important;
+}
+
+.c-accordion__toggle:checked + .title::after {
+  -webkit-transform: rotate(135deg) !important;
+          transform: rotate(135deg) !important;
+}
+/*# sourceMappingURL=style.css.map */

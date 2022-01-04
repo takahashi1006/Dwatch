@@ -1,27 +1,103 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css" media="all">
-    <title>Dwath</title>
+    <!--フォント-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--ビューポート-->
+    <meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1">
+    <!--ファビコン-->
+    <link rel="icon" href="assets/images/favicon.png">
+    <title>Dwath（ディーウォッチ） | 人気ドラマが見放題!</title>
+    <meta data-react-helmet="true" name="description"
+        content="【30日間無料体験実施中】国内・海外ドラマを観るならDwath（ディーウォッチ）。名作はもちろん最新作も、スマホ・PC・テレビ・タブレットなどで視聴可能!">
+    <meta data-react-helmet="true" name="keywords" content="Dwath,ディーウォッチ,ドラマレンタル">
 </head>
+
 <body>
-<header>
-    <section class="l-header">
+    <header>
+        <section class="l-header">
+            <section class="l-sidebar">
+                <h1><a href="#"><img src="assets/images/logo_small.svg" alt=""></a></h1>
+                <div class="c-btn"><a href="#">おためし無料体験</a></div>
+                <div class="c-btn__skeleton"><a href="#">ログイン</a></div>
+                <ul>
+                    <li><a href="#">ホーム</a></li>
+                    <li><a href="#">ランキング</a></li>
+                    <li><a href="#">おすすめ</a></li>
+                    <li><a href="#">国内ドラマ</a></li>
+                    <li><a href="#">海外ドラマ</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                </ul>
+            </section>
+        </section>
+    </header>
+    <main>
+        <section class="l-main">
+            <section class="p-mainvisual">
+                <!--トップの画像-->
+                <p>月額500円（税込）で<br>
+                    国内から海外までのドラマが見放題!</p>
+                <img src="assets/images/logo_big.svg" alt="">
+                <div class="c-btn"><a href="#">まずは30日間無料体験</a></div>
+                <p>すでにご登録の方は、<a href="">こちらからログイン</a>お願いします。</p>
+            </section>
+            <section class="p-contents">
+                <!--作品-->
+            </section>
+            <section class="p-point">
+                <h2>Dwatch3つのポイント</h2>
+            </section>
+            <section class="p-procedure">
+                <h2>簡単3ステップで登録</h2>
+            </section>
+            <section class="p-question">
+                <h2>よくあるご質問</h2>
 
-    </section>
-</header>
-<main>
-    <section class="l-main">
+                <div class="c-accordion">
+                    <div class="c-accordion__option">
+                        <input type="checkbox" id="toggle1" class="c-accordion__toggle">
+                        <label class="title" for="toggle1">すべての作品が見放題ですか？</label>
+                        <div class="content">
+                            <p>はい。全ての作品が見放題対象です。</p>
+                        </div>
+                    </div>
+                    <div class="c-accordion__option">
+                        <input type="checkbox" id="toggle2" class="c-accordion__toggle">
+                        <label class="title" for="toggle2">無料体験とは？</label>
+                        <div class="content">
+                            <p>はい。全ての作品が見放題対象です。</p>
+                        </div>
+                    </div>
+                </div>
 
-    </section>
-</main>
-<footer>
-    <section class="l-footer">
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section class="l-footer">
+            <div class="l-footer__sns">
+                <div><a href="#"><img src="assets/images/sns_youtube.svg" alt=""></a></div>
+                <div><a href="#"><img src="assets/images/sns_facebook.svg" alt=""></a></div>
+                <div><a href="#"><img src="assets/images/sns_instagram.svg" alt=""></a></div>
+                <div><a href="#"><img src="assets/images/sns_twitter.svg" alt=""></a></div>
+            </div>
+            <div class="l-footer__txt">
+                <div><a href="#">利用規約</a></div>
+                <div><a href="#">プライバシーポリシー</a></div>
+                <div><a href="#">会社概要</a></div>
+                <div><a href="#">お問い合わせ</a></div>
+            </div>
+            <div>&copy; Dwath.All Rights Reserved.</div>
+        </section>
+    </footer>
 
-    </section>
-</footer>
 </body>
+
 </html>
