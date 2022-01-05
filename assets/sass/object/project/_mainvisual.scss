@@ -1,0 +1,21 @@
+.p-mainvisual{
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    &__img img{
+        filter: brightness(20%);
+        margin-left: -275px;
+        overflow: hidden;
+        width: 100vw;
+    }
+    &__txt{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        margin:0;
+        padding:0;
+    }
+}

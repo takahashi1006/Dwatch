@@ -1,3 +1,41 @@
-.c-btn{
-    
+.c-btn {
+    display: block;
+    text-align: center;
+    padding: 20px 50px;
+    border-radius: 50px;
+    text-decoration: none;
+    background-image: linear-gradient(45deg, #694fc4 0%, #c54a7f 100%);
+    &:hover {
+        background-image: linear-gradient(#c54a7f 100%);
+    }
+    &__skeleton{
+        display: block;
+        text-align: center;
+        padding: 20px 50px;
+        border-radius: 50px;
+        text-decoration: none;
+        border: solid 1px $font_color;
+        &:hover {
+            border: solid 1px $color_accent;
+            background-image: linear-gradient($color_accent 100%);
+        }
+    }
+    &__square{
+        display: block;
+        padding: 20px 50px;
+        &:hover {
+            background-image: linear-gradient($color_accent 100%);
+        }
+    }
+    &__main{
+        display: inline-block;
+        padding: 20px 50px;
+        border-radius: 50px;
+        text-decoration: none;
+        background-image: linear-gradient(45deg, #694fc4 0%, #c54a7f 100%);
+        text-align: center;
+        &:hover {
+            background-image: linear-gradient(#c54a7f 100%);
+        }
+    }
 }

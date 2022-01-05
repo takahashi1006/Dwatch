@@ -170,7 +170,19 @@ h2 {
 }
 
 .l-header {
+  width: 250px;
   background-color: #2C2C2C;
+  position: fixed;
+  height: 100vh;
+  z-index: 10;
+}
+
+.l-main {
+  padding-left: 250px;
+}
+
+.l-footer {
+  padding-left: 250px;
 }
 
 .l-footer__sns {
@@ -183,6 +195,30 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.p-mainvisual {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+}
+
+.p-mainvisual__img img {
+  -webkit-filter: brightness(20%);
+          filter: brightness(20%);
+  margin-left: -275px;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.p-mainvisual__txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
 }
 
 .c-accordion {
@@ -266,5 +302,58 @@ h2 {
 .c-accordion__toggle:checked + .title::after {
   -webkit-transform: rotate(135deg) !important;
           transform: rotate(135deg) !important;
+}
+
+.c-btn {
+  display: block;
+  text-align: center;
+  padding: 20px 50px;
+  border-radius: 50px;
+  text-decoration: none;
+  background-image: linear-gradient(45deg, #694fc4 0%, #c54a7f 100%);
+}
+
+.c-btn:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, to(#c54a7f));
+  background-image: linear-gradient(#c54a7f 100%);
+}
+
+.c-btn__skeleton {
+  display: block;
+  text-align: center;
+  padding: 20px 50px;
+  border-radius: 50px;
+  text-decoration: none;
+  border: solid 1px #fff;
+}
+
+.c-btn__skeleton:hover {
+  border: solid 1px #834EB0;
+  background-image: -webkit-gradient(linear, left top, left bottom, to(#834EB0));
+  background-image: linear-gradient(#834EB0 100%);
+}
+
+.c-btn__square {
+  display: block;
+  padding: 20px 50px;
+}
+
+.c-btn__square:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, to(#834EB0));
+  background-image: linear-gradient(#834EB0 100%);
+}
+
+.c-btn__main {
+  display: inline-block;
+  padding: 20px 50px;
+  border-radius: 50px;
+  text-decoration: none;
+  background-image: linear-gradient(45deg, #694fc4 0%, #c54a7f 100%);
+  text-align: center;
+}
+
+.c-btn__main:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, to(#c54a7f));
+  background-image: linear-gradient(#c54a7f 100%);
 }
 /*# sourceMappingURL=style.css.map */

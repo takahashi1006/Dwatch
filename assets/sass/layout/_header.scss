@@ -1,3 +1,7 @@
 .l-header{
+    width: $width_nav;
     background-color: $color_main;
+    position: fixed;
+    height: 100vh;
+    z-index: 10;
 }
