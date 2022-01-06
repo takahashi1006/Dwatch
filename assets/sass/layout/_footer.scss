@@ -1,9 +1,22 @@
 .l-footer{
-    padding-left: $width_nav;
+    padding-left: $width_nav + 10px;
+    padding-right: 10px;
     &__sns{
+        width: 174px;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
     }
     &__txt{
+        font-size: .75em;
+        width: 360px;
         display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    &__copy{
+        font-size: .75em;
+        text-align: center;
     }
 }

@@ -10,6 +10,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--js-->
+    <script src="assets/js/common.js"></script>
+    <!--------------------スライダー見た目-------------------------------------------------->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <!------------------------------------------------------------------------------------->
+
+    <!--------------------jQuery----------------------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!------------------------------------------------------------------------------------->
+
+    <!--------------------スライダー動かすやつ----------------------------------------------->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!------------------------------------------------------------------------------------->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
     <!--ビューポート-->
     <meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1">
     <!--ファビコン-->
@@ -22,8 +40,8 @@
 
 <body>
     <section class="l-wrap">
-    <header>
-        <section class="l-header">
+        <header>
+            <section class="l-header">
                 <h1><a href="#"><img src="assets/images/logo_small.svg" alt=""></a></h1>
                 <div class="c-btn"><a href="#">おためし無料体験</a></div>
                 <div class="c-btn__skeleton"><a href="#">ログイン</a></div>
@@ -36,52 +54,196 @@
                     <li class="c-btn__square"><a href="#">お問い合わせ</a></li>
                 </ul>
             </section>
-    </header>
-    <main>
-        <section class="l-main">
-            <section class="p-mainvisual">
-                <div class="p-mainvisual__img"><img src="assets/images/mainvisual.png" alt=""></div>
-<div class="p-mainvisual__txt">
-                <p>月額500円（税込）で<br>
-                    国内から海外までのドラマが見放題!</p>
-                <img src="assets/images/logo_big.svg" alt=""><br>
-                <div class="c-btn__main"><a href="#">まずは30日間無料体験</a></div>
-                <p>すでにご登録の方は、<a href="">こちらからログイン</a>お願いします。</p>
-            </div>
-            </section>
-            <section class="p-contents">
-                <!--作品-->
-            </section>
-            <section class="p-point">
-                <h2>Dwatch3つのポイント</h2>
-            </section>
-            <section class="p-procedure">
-                <h2>簡単3ステップで登録</h2>
-            </section>
-            <section class="p-question">
-                <h2>よくあるご質問</h2>
+        </header>
+        <main>
+            <section class="l-main">
+                <section class="p-mainvisual">
+                    <div class="p-mainvisual__img"><img src="assets/images/mainvisual.png" alt=""></div>
+                    <div class="p-mainvisual__txt">
+                        <p>月額500円（税込）で<br>
+                            国内から海外までのドラマが見放題!</p>
+                        <img src="assets/images/logo_big.svg" alt=""><br>
+                        <div class="c-btn__main"><a href="#">まずは30日間無料体験</a></div>
+                        <p>すでにご登録の方は、<a href="#">こちらからログイン</a>お願いします。</p>
+                    </div>
+                </section>
+                <section class="p-contents">
+                    <h3>ランキング</h3>
+                    <section class="c-slider">
+                        <div class="sec_inner">
+                            <ul class="c-slider__slider">
+                                <li><a href="#"><img src="assets/images/ranking_1.png" height="191" width="330"
+                                            alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/ranking_2.png" height="191" width="330"
+                                            alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/ranking_3.png" height="191" width="330"
+                                            alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/ranking_4.png" height="191" width="330"
+                                            alt=""></a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <h3>おすすめ</h3>
+                    <section class="c-slider">
+                        <div class="sec_inner">
+                            <ul class="c-slider__slider">
+                                <li><a href="#"><img src="assets/images/recommendation_1.png" height="191" width="330"
+                                            alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/recommendation_2.png" height="191" width="330"
+                                            alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/recommendation_3.png" height="191" width="330"
+                                            alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/recommendation_4.png" height="191" width="330"
+                                            alt=""></a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <h3>恋愛</h3>
+                    <section class="c-slider">
+                        <div class="sec_inner">
+                            <ul class="c-slider__slider">
+                                <li><a href="#"><img src="assets/images/love_1.png" height="191" width="330" alt=""></a>
+                                </li>
+                                <li><a href="#"><img src="assets/images/love_2.png" height="191" width="330" alt=""></a>
+                                </li>
+                                <li><a href="#"><img src="assets/images/love_3.png" height="191" width="330" alt=""></a>
+                                </li>
+                                <li><a href="#"><img src="assets/images/love_4.png" height="191" width="330" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <h3>サスペンス</h3>
+                    <section class="c-slider">
+                        <div class="sec_inner">
+                            <ul class="c-slider__slider">
+                                <li><a href="#"><img src="assets/images/suspense_1.png" height="191" width="330"
+                                            alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/suspense_2.png" height="191" width="330"
+                                            alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/suspense_3.png" height="191" width="330"
+                                            alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/suspense_4.png" height="191" width="330"
+                                            alt=""></a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <h3>アクション</h3>
+                    <section class="c-slider">
+                        <div class="sec_inner">
+                            <ul class="c-slider__slider">
+                                <li><a href="#"><img src="assets/images/action_1.png" height="191" width="330"
+                                            alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/action_2.png" height="191" width="330"
+                                            alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/action_3.png" height="191" width="330"
+                                            alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/action_4.png" height="191" width="330"
+                                            alt=""></a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <h3>コメディ</h3>
+                    <section class="c-slider">
+                        <div class="sec_inner">
+                            <ul class="c-slider__slider">
+                                <li><a href="#"><img src="assets/images/comedy_1.png" height="191" width="330"
+                                            alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/comedy_2.png" height="191" width="330"
+                                            alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/comedy_3.png" height="191" width="330"
+                                            alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/comedy_4.png" height="191" width="330"
+                                            alt=""></a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <h3>ファンタジー</h3>
+                    <section class="c-slider">
+                        <div class="sec_inner">
+                            <ul class="c-slider__slider">
+                                <li><a href="#"><img src="assets/images/fantasy_1.png" height="191" width="330"
+                                            alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/fantasy_2.png" height="191" width="330"
+                                            alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/fantasy_3.png" height="191" width="330"
+                                            alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/fantasy_4.png" height="191" width="330"
+                                            alt=""></a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <h3>歴史</h3>
+                    <section class="c-slider">
+                        <div class="sec_inner">
+                            <ul class="c-slider__slider">
+                                <li><a href="#"><img src="assets/images/history_1.png" height="191" width="330"
+                                            alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/history_2.png" height="191" width="330"
+                                            alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/history_3.png" height="191" width="330"
+                                            alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/history_4.png" height="191" width="330"
+                                            alt=""></a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <p>他ジャンルも盛りだくさん!</p>
+                    <div class="c-btn__main"><a href="#">まずは30日間無料体験</a></div>
+                </section>
 
-                <div class="c-accordion">
-                    <div class="c-accordion__option">
-                        <input type="checkbox" id="toggle1" class="c-accordion__toggle">
-                        <label class="title" for="toggle1">すべての作品が見放題ですか？</label>
-                        <div class="content">
-                            <p>はい。全ての作品が見放題対象です。</p>
+                <section class="p-point">
+                    <h2>Dwatch3つのポイント</h2>
+                    <section>
+                        <div><img src="assets/images/point_1.png" height="250" width="346" alt=""></div>
+                        <div>Dwatchでしか観られない<br>作品が盛り沢山</div>
+                        <p>5000万本以上の国内、海外ドラマが見放題!</p>
+                    </section>
+                    <section>
+                        <div><img src="assets/images/point_2.png" height="250" width="346" alt=""></div>
+                        <div>様々なデバイスで閲覧可能</div>
+                        <p>スマートフォン・タブレット、テレビやパソコンで閲覧できます。</p>
+                    </section>
+                    <section>
+                        <div><img src="assets/images/point_3.png" height="250" width="346" alt=""></div>
+                        <div>オフライン視聴</div>
+                        <p>作品を事前にダウンロードしておけばいつでも視聴が可能になります。</p>
+                    </section>
+                </section>
+                <section class="p-procedure">
+                    <h2>簡単3ステップで登録</h2>
+                    <ul>
+                        <li><img src="assets/images/step_1.png" height="320" width="320" alt=""></li>
+                        <li><img src="assets/images/step_2.png" height="320" width="320" alt=""></li>
+                        <li><img src="assets/images/step_3.png" height="320" width="320" alt=""></li>
+                    </ul>
+                    <div class="c-btn__main"><a href="#">今すぐ無料体験してみる</a></div>
+                </section>
+                <section class="p-question">
+                    <h2>よくあるご質問</h2>
+
+                    <div class="c-accordion">
+                        <div class="c-accordion__option">
+                            <input type="checkbox" id="toggle1" class="c-accordion__toggle">
+                            <label class="title" for="toggle1">すべての作品が見放題ですか？</label>
+                            <div class="content">
+                                <p>はい。全ての作品が見放題対象です。</p>
+                            </div>
+                        </div>
+                        <div class="c-accordion__option">
+                            <input type="checkbox" id="toggle2" class="c-accordion__toggle">
+                            <label class="title" for="toggle2">無料体験とは？</label>
+                            <div class="content">
+                                <p>はい。全ての作品が見放題対象です。</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="c-accordion__option">
-                        <input type="checkbox" id="toggle2" class="c-accordion__toggle">
-                        <label class="title" for="toggle2">無料体験とは？</label>
-                        <div class="content">
-                            <p>はい。全ての作品が見放題対象です。</p>
-                        </div>
-                    </div>
-                </div>
-
+                </section>
             </section>
-        </section>
-    </main>
-</section>
+        </main>
+    </section>
+
+
     <footer>
         <section class="l-footer">
             <div class="l-footer__sns">
@@ -92,14 +254,39 @@
             </div>
             <div class="l-footer__txt">
                 <div><a href="#">利用規約</a></div>
+                <div>|</div>
                 <div><a href="#">プライバシーポリシー</a></div>
+                <div>|</div>
                 <div><a href="#">会社概要</a></div>
+                <div>|</div>
                 <div><a href="#">お問い合わせ</a></div>
             </div>
-            <div>&copy; Dwath.All Rights Reserved.</div>
+            <div class="l-footer__copy">&copy; Dwath.All Rights Reserved.</div>
         </section>
     </footer>
-
+    <script>
+        $('.c-slider__slider').slick({
+            speed: 800,             //スライドするスピード
+            arrows: true,           //左右の矢印
+            infinite: true,         //スライドのループ
+            pauseOnHover: false,    //ホバーしたときにスライドを一時停止しない　
+            slidesToShow: 3,
+            arrows: true,
+            slidesToShow: 3,
+            centerPadding: '50px',  //はみ出しサイズ
+            centerMode: true,
+            initialSlide: 1,        //表示順変更
+            prevArrow: '<img src="assets/images/arrow_left_hide.svg" alt="" class="prev_icon">',
+            nextArrow: '<img src="assets/images/arrow_right.svg" alt="" class="next_icon">',
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2, // 表示スライド数 2つ
+                    slidesToScroll: 1,
+                }
+            }]
+        });
+    </script>
 </body>
 
 </html>

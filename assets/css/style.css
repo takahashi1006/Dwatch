@@ -167,6 +167,7 @@ h2 {
   font-size: 2.5em;
   letter-spacing: 10px;
   font-weight: 600;
+  text-align: center;
 }
 
 .l-header {
@@ -178,37 +179,58 @@ h2 {
 }
 
 .l-main {
-  padding-left: 250px;
+  padding-left: 300px;
+  padding-right: 10px;
 }
 
 .l-footer {
-  padding-left: 250px;
+  padding-left: 260px;
+  padding-right: 10px;
 }
 
 .l-footer__sns {
+  width: 174px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
 }
 
 .l-footer__txt {
+  font-size: .75em;
+  width: 360px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+.l-footer__copy {
+  font-size: .75em;
+  text-align: center;
 }
 
 .p-mainvisual {
+  margin-left: -60px;
+  margin-right: -10px;
   position: relative;
-  height: 100vh;
   text-align: center;
+  overflow: hidden;
 }
 
 .p-mainvisual__img img {
   -webkit-filter: brightness(20%);
           filter: brightness(20%);
-  margin-left: -275px;
-  overflow: hidden;
-  width: 100vw;
+  height: 100vh;
 }
 
 .p-mainvisual__txt {
@@ -219,6 +241,24 @@ h2 {
   transform: translate(-50%, -50%);
   margin: 0;
   padding: 0;
+}
+
+.p-contents {
+  margin-left: -50px;
+  padding-top: 50px;
+}
+
+.p-contents h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+  padding: 50px 0 10px 55px;
+}
+
+.p-procedure ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c-accordion {
@@ -355,5 +395,46 @@ h2 {
 .c-btn__main:hover {
   background-image: -webkit-gradient(linear, left top, left bottom, to(#c54a7f));
   background-image: linear-gradient(#c54a7f 100%);
+}
+
+.c-slider .slick-next {
+  right: 0 !important;
+}
+
+.c-slider .slick-prev {
+  left: 0 !important;
+}
+
+.c-slider .slick-arrow {
+  width: initial !important;
+  height: initial !important;
+  z-index: 2 !important;
+}
+
+.c-slider .slick-arrow:before {
+  font-size: 30px !important;
+}
+
+.c-slider .prev_icon {
+  position: absolute;
+  top: 49%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  z-index: 1;
+}
+
+.c-slider .next_icon {
+  position: absolute;
+  top: 49%;
+  right: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  z-index: 1;
+}
+
+.c-slider__slider img {
+  width: calc(100% - 10px);
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */
