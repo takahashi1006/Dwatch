@@ -1,6 +1,9 @@
 .p-procedure{
+    width: 100%;
+    margin: 0 auto;
     ul{
         width: 100%;
         display: flex;
+        justify-content: space-between;
     }
 }

@@ -1,2 +1,19 @@
 .p-point{
+    width: $width_main_inside;
+    margin: 0 auto;
+    &__wrap_1,&__wrap_2,&__wrap_3{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .p-point__subttl{
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+        .p-point__txt{
+            width:346px;
+        }
+    }
+    &__wrap_1,&__wrap_3{
+        flex-flow: row-reverse;
+    }
 }
