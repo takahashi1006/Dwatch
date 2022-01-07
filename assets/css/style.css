@@ -276,7 +276,7 @@ h2 {
 }
 
 .p-mainvisual__txt img {
-  padding-bottom: 50px;
+  padding: 0 0 50px 0;
 }
 
 .p-mainvisual__txt .p-mainvisual__login {
