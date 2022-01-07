@@ -1,14 +1,16 @@
 .c-btn {
-    display: block;
-    text-align: center;
-    padding: 20px 50px;
-    border-radius: 50px;
-    text-decoration: none;
-    background-image: linear-gradient(45deg, #694fc4 0%, #c54a7f 100%);
-    &:hover {
-        background-image: linear-gradient(#c54a7f 100%);
+    &__normal {
+        display: block;
+        text-align: center;
+        padding: 20px 50px;
+        border-radius: 50px;
+        text-decoration: none;
+        background-image: linear-gradient(45deg, #694fc4 0%, #c54a7f 100%);
+        &:hover {
+            background-image: linear-gradient(#c54a7f 100%);
+        }
     }
-    &__skeleton{
+    &__skeleton {
         display: block;
         text-align: center;
         padding: 20px 50px;
@@ -20,14 +22,15 @@
             background-image: linear-gradient($color_accent 100%);
         }
     }
-    &__square{
+    &__square {
         display: block;
-        padding: 20px 50px;
+        margin: 0 -10px;
+        padding: 20px 10px;
         &:hover {
             background-image: linear-gradient($color_accent 100%);
         }
     }
-    &__main{
+    &__main {
         display: block;
         height: 23px;
         width: 275.52px;

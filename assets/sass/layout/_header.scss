@@ -1,7 +1,17 @@
 .l-header{
-    width: $width_nav;
-    background-color: $color_main;
-    position: fixed;
+    width: $width_nav - 20px;
     height: 100vh;
+    position: fixed;
+    padding: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $color_main;
     z-index: 10;
+    h1{
+        padding: 10px 0;
+    }
+    &__btn li{
+        margin-bottom: 20px;
+    }
 }

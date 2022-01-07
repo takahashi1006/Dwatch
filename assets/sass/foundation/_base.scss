@@ -25,6 +25,9 @@ $breakpoints: (
 );
 
 //================================================
+html{
+    overflow-x: hidden;//下のスクロールバー消す
+}
 body{
     color: $font_color;
     font-family: $font_noto;
@@ -39,4 +42,5 @@ h2{
     letter-spacing: 10px;
     font-weight: 600;
     text-align: center;
+    padding: 200px 0 50px;
 }
