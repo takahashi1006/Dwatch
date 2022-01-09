@@ -4,7 +4,7 @@
     overflow: hidden;
     &__img img {
         filter: brightness(20%);
-        width:100vw;
+        width: 100vw;
         height: 100vh;
         object-fit: cover;
     }
@@ -43,7 +43,7 @@
         }
     }
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
     /*　画面サイズが1024pxからはここを読み込む　*/
     .p-mainvisual {
         margin-left: -20px;
@@ -74,12 +74,12 @@
                 font-size: 1.2em;
                 padding-bottom: 30px;
             }
-    
+
             img {
                 padding: 0 0 50px 0;
             }
             .p-mainvisual__login {
-                font-size: 1em;
+                font-size: 0.8em;
                 padding-top: 20px;
                 a {
                     text-decoration: underline;

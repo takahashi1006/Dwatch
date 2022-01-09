@@ -12,5 +12,11 @@
     .p-procedure {
         width: 100%;
         margin: 0 auto;
+        ul {
+            height: 1170px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }

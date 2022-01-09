@@ -1,31 +1,64 @@
-.p-point{
+.p-point {
     width: $width_main_inside - 200px;
     margin: 0 auto;
-    &__wrap_1,&__wrap_2,&__wrap_3{
+    &__wrap_1,
+    &__wrap_2,
+    &__wrap_3 {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-bottom: 100px;
-        .p-point__subttl{
+        .p-point__subttl {
             font-size: 2em;
             font-weight: 500;
             width: 346px;
         }
-        .p-point__txt{
+        .p-point__txt {
             font-size: 1.2em;
             padding-top: 10px;
             line-height: 1.8em;
             width: 346px;
         }
     }
-    &__wrap_1,&__wrap_3{
+    &__wrap_1,
+    &__wrap_3 {
         flex-flow: row-reverse;
+    }
+    .sp {
+        display: none;
     }
 }
 @media screen and (max-width: 1024px) {
     /*　画面サイズが1024pxからはここを読み込む　*/
-    .p-point{
-        width: 80%;
+    .p-point {
+        width: 100%;
         margin: 0 auto;
+        &__wrap_1,
+        &__wrap_2,
+        &__wrap_3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 100px;
+            flex-direction: column;
+        }
+        .p-point__subttl {
+            padding-top: 20px;
+            font-size: 1.5em;
+            font-weight: 500;
+            width: 346px;
+            br {
+                display: none;
+            }
+        }
+        .p-point__txt {
+            font-size: 1em;
+            padding-top: 10px;
+            line-height: 1.8em;
+            width: 346px;
+        }
+        .sp {
+            display: inline;
+        }
     }
 }

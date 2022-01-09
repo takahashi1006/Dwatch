@@ -1,10 +1,10 @@
-.l-main{
+.l-main {
     margin-left: $width_nav;
     width: auto;
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
     /*　画面サイズが1024pxからはここを読み込む　*/
-    .l-main{
+    .l-main {
         padding-left: 0;
         margin: auto 20px;
     }

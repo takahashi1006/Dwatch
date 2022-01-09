@@ -18,7 +18,7 @@
         text-decoration: none;
         border: solid 1px $font_color;
         &:hover {
-            background-color: rgba(255, 255, 255, .2);
+            background-color: rgba(255, 255, 255, 0.2);
         }
     }
     &__square {
@@ -26,13 +26,13 @@
         margin: 0 -10px;
         padding: 20px 10px;
         &:hover {
-            background-color: rgba(255, 255, 255, .2);
+            background-color: rgba(255, 255, 255, 0.2);
         }
     }
     &__main {
         display: block;
         height: 23px;
-        width: 275.52px;
+        width: 200px;
         padding: 20px 50px;
         border-radius: 50px;
         text-decoration: none;
@@ -44,7 +44,7 @@
         }
     }
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
     /*　画面サイズが1024pxからはここを読み込む　*/
     .c-btn {
         &__normal {
@@ -66,7 +66,7 @@
             text-decoration: none;
             border: solid 1px $font_color;
             &:hover {
-                background-color: rgba(255, 255, 255, .2);
+                background-color: rgba(255, 255, 255, 0.2);
             }
         }
         &__square {
@@ -74,7 +74,7 @@
             margin: 0 -10px;
             padding: 20px 10px;
             &:hover {
-                background-color: rgba(255, 255, 255, .2);
+                background-color: rgba(255, 255, 255, 0.2);
             }
         }
     }

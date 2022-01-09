@@ -14,9 +14,9 @@ $font_noto: "Noto Sans JP", sans-serif;
 $font_color: #fff;
 
 // 色関係の設定------------------------------------
-$color_base: #0F0F0F;
-$color_main: #2C2C2C;
-$color_accent: #834EB0;
+$color_base: #0f0f0f;
+$color_main: #2c2c2c;
+$color_accent: #834eb0;
 
 // ブレイクポイント--------------------------------
 $breakpoints: (
@@ -25,22 +25,28 @@ $breakpoints: (
 );
 
 //================================================
-html{
-    overflow-x: hidden;//下のスクロールバー消す
+html {
+    overflow-x: hidden; //下のスクロールバー消す
 }
-body{
+body {
     color: $font_color;
     font-family: $font_noto;
     font-size: 1em;
     background-color: $color_base;
 }
-a{
+a {
     color: $font_color;
 }
-h2{
+h2 {
     font-size: 2.5em;
     letter-spacing: 10px;
     font-weight: 600;
     text-align: center;
     padding: 200px 0 75px;
+}
+@media screen and (max-width: 1024px) {
+    /*　画面サイズが1024pxからはここを読み込む　*/
+    h2 {
+        font-size: 1.5em;
+    }
 }

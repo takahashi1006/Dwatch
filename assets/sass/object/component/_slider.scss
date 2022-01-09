@@ -1,7 +1,7 @@
 .c-slider {
     width: 1071px;
     margin: 0 auto;
-    li img{
+    li img {
         width: 98%;
         height: auto;
         margin: 0 auto;
@@ -39,12 +39,12 @@
         height: auto;
     }
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
     /*　画面サイズが1024pxからはここを読み込む　*/
     .c-slider {
         width: 100%;
         margin: 0 auto;
-        li img{
+        li img {
             width: 98%;
             height: auto;
             margin: 0 auto;
