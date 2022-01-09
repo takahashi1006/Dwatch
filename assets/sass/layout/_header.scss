@@ -15,3 +15,18 @@
         margin-bottom: 20px;
     }
 }
+@media screen and (max-width:1024px) {
+    /*　画面サイズが1024pxからはここを読み込む　*/
+    .l-header{
+        width: 100vw;
+        height: 75px;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        &__btn li{
+            margin-bottom: 0;
+        }
+    }
+}

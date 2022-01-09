@@ -22,3 +22,10 @@
         flex-flow: row-reverse;
     }
 }
+@media screen and (max-width: 1024px) {
+    /*　画面サイズが1024pxからはここを読み込む　*/
+    .p-point{
+        width: 80%;
+        margin: 0 auto;
+    }
+}

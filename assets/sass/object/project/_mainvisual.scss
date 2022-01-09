@@ -1,12 +1,12 @@
 .p-mainvisual {
-    margin-left: -60px;
-    margin-right: -10px;
     position: relative;
     text-align: center;
     overflow: hidden;
     &__img img {
         filter: brightness(20%);
+        width:100vw;
         height: 100vh;
+        object-fit: cover;
     }
     &__txt {
         position: absolute;
@@ -38,6 +38,54 @@
                 text-decoration: underline;
                 &:hover {
                     color: $color_accent;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1024px) {
+    /*　画面サイズが1024pxからはここを読み込む　*/
+    .p-mainvisual {
+        margin-left: -20px;
+        margin-right: -20px;
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        &__img img {
+            filter: brightness(20%);
+            height: 100vh;
+        }
+        &__txt {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            .p-mainvisual__txt1 {
+                letter-spacing: 2px;
+                span {
+                    font-size: 2em;
+                }
+            }
+            p {
+                font-size: 1.2em;
+                padding-bottom: 30px;
+            }
+    
+            img {
+                padding: 0 0 50px 0;
+            }
+            .p-mainvisual__login {
+                font-size: 1em;
+                padding-top: 20px;
+                a {
+                    text-decoration: underline;
+                    &:hover {
+                        color: $color_accent;
+                    }
                 }
             }
         }

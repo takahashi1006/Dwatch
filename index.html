@@ -351,6 +351,24 @@
             initialSlide: 1,        //表示順変更
             prevArrow: '<img src="assets/images/arrow_left.svg" alt="" class="prev_icon">',
             nextArrow: '<img src="assets/images/arrow_right.svg" alt="" class="next_icon">',
+            responsive: [
+                {
+                    breakpoint: 1024, // 768~1023px以下のサイズに適用
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }, {
+                    breakpoint: 768, // 480〜767px以下のサイズに適用
+                    settings: {
+                        slidesToShow: 2
+                    }
+                }, {
+                    breakpoint: 480, // 〜479px以下のサイズに適用
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
         });
     </script>
 </body>

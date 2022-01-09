@@ -39,3 +39,47 @@
         height: auto;
     }
 }
+@media screen and (max-width:1024px) {
+    /*　画面サイズが1024pxからはここを読み込む　*/
+    .c-slider {
+        width: 100%;
+        margin: 0 auto;
+        li img{
+            width: 98%;
+            height: auto;
+            margin: 0 auto;
+        }
+        .slick-next {
+            right: 0 !important;
+        }
+        .slick-prev {
+            left: 0 !important;
+        }
+        .slick-arrow {
+            width: initial !important;
+            height: initial !important;
+            z-index: 2 !important;
+        }
+        .slick-arrow:before {
+            font-size: 30px !important;
+        }
+        .prev_icon {
+            position: absolute;
+            top: 49%;
+            left: 0;
+            transform: translate(0, -50%);
+            z-index: 1;
+        }
+        .next_icon {
+            position: absolute;
+            top: 49%;
+            right: 0;
+            transform: translate(0, -50%);
+            z-index: 1;
+        }
+        &__slider img {
+            width: 326px;
+            height: auto;
+        }
+    }
+}
