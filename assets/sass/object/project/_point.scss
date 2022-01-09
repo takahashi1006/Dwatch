@@ -3,7 +3,7 @@
     margin: 0 auto;
     &__wrap_1,&__wrap_2,&__wrap_3{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         padding-bottom: 100px;
         .p-point__subttl{

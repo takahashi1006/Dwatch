@@ -46,6 +46,9 @@
                     <li>
                         <h1><a href="#"><img src="assets/images/logo_small.svg" alt=""></a></h1>
                     </li>
+                    <li class="c-search">
+                        <input type="text" placeholder="作品名・出演者名で検索">
+                    </li>
                     <li class="c-btn__normal"><a href="#">おためし無料体験</a></li>
                     <li class="c-btn__skeleton"><a href="#">ログイン</a></li>
                 </ul>
@@ -244,7 +247,39 @@
                             <input type="checkbox" id="toggle2" class="c-accordion__toggle">
                             <label class="title" for="toggle2">無料体験とは？</label>
                             <div class="content">
-                                <p>はい。全ての作品が見放題対象です。</p>
+                                <p>Dwathの見放題対象作品を期間限定（30日間）で無料体験できるお得なキャンペーンです。</p>
+                            </div>
+                        </div>
+                        <div class="c-accordion__option">
+                            <input type="checkbox" id="toggle3" class="c-accordion__toggle">
+                            <label class="title" for="toggle3">料金の支払方法を知りたいです。</label>
+                            <div class="content">
+                                <p>クレジットカード（VISA / MASTER / JCB / AMEX / DINERS）<br>
+                                    キャリア決済（ドコモ払い/ソフトバンクまとめて支払い・ワイモバイルまとめて支払い/au かんたん決済）<br>
+                                    iTunes Store決済、Google Play ストア決済 をご利用いただけます。<br>
+                                    デビットカード（VISA / Master / JCB / AMEX / DINERS）<br>
+                                    ※ブランドが付帯されていないハウスカード等はご利用いただけません。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="c-accordion__option">
+                            <input type="checkbox" id="toggle4" class="c-accordion__toggle">
+                            <label class="title" for="toggle4">いつでも解約できますか？</label>
+                            <div class="content">
+                                <p>いつでも簡単に解約が可能です。<br>
+                                    無料体験期間中の解約であれば、月額料金が発生することもありませんのでご安心ください。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="c-accordion__option">
+                            <input type="checkbox" id="toggle5" class="c-accordion__toggle">
+                            <label class="title" for="toggle5">対応機種は何ですか？</label>
+                            <div class="content">
+                                <p>スマートフォン・タブレット（iOS/Android）<br>
+                                    Android TV（BRAVIA・AQUOS）<br>
+                                    Chromecast（クロームキャスト、第1·2·3世代・Ultra）<br>
+                                    Amazon Fire TV Stick、PlayStation®5、Apple TVからご利用いただけます。
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -285,7 +320,7 @@
             centerPadding: '50px',  //はみ出しサイズ
             centerMode: true,
             initialSlide: 1,        //表示順変更
-            prevArrow: '<img src="assets/images/arrow_left_hide.svg" alt="" class="prev_icon">',
+            prevArrow: '<img src="assets/images/arrow_left.svg" alt="" class="prev_icon">',
             nextArrow: '<img src="assets/images/arrow_right.svg" alt="" class="next_icon">',
         });
     </script>

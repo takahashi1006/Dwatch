@@ -1,4 +1,11 @@
 .c-slider {
+    width: 1071px;
+    margin: 0 auto;
+    li img{
+        width: 98%;
+        height: auto;
+        margin: 0 auto;
+    }
     .slick-next {
         right: 0 !important;
     }

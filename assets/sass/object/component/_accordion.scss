@@ -1,6 +1,6 @@
 .c-accordion {
     margin: 3em auto;
-    max-width: 60vw;
+    width: $width_main_inside;
     &__toggle {
         display: none;
     }

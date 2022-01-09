@@ -1,8 +1,7 @@
 .p-procedure{
-    width: 100%;
+    width: $width_main_inside;
     margin: 0 auto;
     ul{
-        width: 100%;
         display: flex;
         justify-content: space-between;
         padding-bottom: 100px;

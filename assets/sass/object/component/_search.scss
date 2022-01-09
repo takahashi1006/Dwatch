@@ -1,0 +1,22 @@
+.c-search {
+    display: inline-block;
+    position: relative;
+    &::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: url(../images/search.svg) no-repeat center center / auto 100%;
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+    input {
+        background-color: $color_main;
+        border-radius: 30px;
+        border: solid 1px #fff;
+        color: #fff;
+        padding: 10px 0 10px 3.5em;
+        font-size: .8em;
+    }
+}
