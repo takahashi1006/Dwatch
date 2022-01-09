@@ -12,22 +12,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <!--js-->
     <script src="assets/js/common.js"></script>
-    <!--------------------スライダー見た目-------------------------------------------------->
+    <!--スライダー見た目-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
-    <!------------------------------------------------------------------------------------->
-
-    <!--------------------jQuery----------------------------------------------------------->
+    <!--スライダーjQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!------------------------------------------------------------------------------------->
-
-    <!--------------------スライダー動かすやつ----------------------------------------------->
+    <!--スライダー動かすやつ-->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <!------------------------------------------------------------------------------------->
+    <!--フェードイン-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--js-->
     <script type="text/javascript" src="js/slick.min.js"></script>
-
     <!--ビューポート-->
     <meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1">
     <!--ファビコン-->
@@ -67,14 +64,16 @@
                 <section class="p-mainvisual">
                     <div class="p-mainvisual__img"><img src="assets/images/mainvisual.png" alt=""></div>
                     <div class="p-mainvisual__txt">
-                        <p>月額500円（税込）で<br>
-                            国内から海外までのドラマが見放題!</p>
+                        <p class="p-mainvisual__txt1">
+                            月額<span>500</span>円(税込)で<br>
+                            国内から海外までのドラマが見放題!
+                        </p>
                         <img src="assets/images/logo_big.svg" alt=""><br>
                         <div class="c-btn__main"><a href="#">まずは30日間無料体験</a></div>
                         <p class="p-mainvisual__login">すでにご登録の方は、<a href="#">こちらからログイン</a>お願いします。</p>
                     </div>
                 </section>
-                <section class="p-contents">
+                <section class="p-contents fade_bottom1">
                     <h3>ランキング</h3>
                     <section class="c-slider">
                         <div class="sec_inner">
@@ -195,47 +194,55 @@
                             </ul>
                         </div>
                     </section>
-                    <p>他ジャンルも盛りだくさん!</p>
-                    <div class="c-btn__main"><a href="#">まずは30日間無料体験</a></div>
+                    <p>＼ 他ジャンルも盛りだくさん! ／</p>
+                    <div class="c-btn__main fade_bottom2"><a href="#">まずは30日間無料体験</a></div>
                 </section>
 
                 <section class="p-point">
                     <h2>Dwatch3つのポイント</h2>
                     <section class="p-point__wrap_1">
-                        <div><img src="assets/images/point_1.png" height="250" width="346" alt=""></div>
+                        <div class="fade_bottom1"><img src="assets/images/point_1.png" height="250" width="346" alt="">
+                        </div>
                         <div>
-                            <p class="p-point__subttl">Dwatchでしか観られない<br>作品が盛り沢山</p>
-                            <p class="p-point__txt">5000万本以上の国内、海外ドラマが見放題!</p>
+                            <p class="p-point__subttl fade_bottom2">Dwatch独占配信</p>
+                            <p class="p-point__txt fade_bottom3">国内・海外ドラマの人気作品から<br>マイナー作品まで幅広くDwatch独占で<br>配信しています。</p>
+
+
                         </div>
                     </section>
                     <section class="p-point__wrap_2">
-                        <div><img src="assets/images/point_2.png" height="250" width="346" alt=""></div>
+                        <div class="fade_bottom1"><img src="assets/images/point_2.png" height="250" width="346" alt="">
+                        </div>
                         <div>
-                            <p class="p-point__subttl">様々なデバイスで閲覧可能</p>
-                            <p class="p-point__txt">スマートフォン・タブレット、テレビやパソコンで閲覧できます。</p>
+                            <p class="p-point__subttl fade_bottom2">様々なデバイスで<br>閲覧可能</p>
+                            <p class="p-point__txt fade_bottom3">スマートフォン・タブレット、テレビや<br>パソコンで閲覧できます。</p>
                         </div>
                     </section>
                     <section class="p-point__wrap_3">
-                        <div><img src="assets/images/point_3.png" height="250" width="346" alt=""></div>
+                        <div class="fade_bottom1"><img src="assets/images/point_3.png" height="250" width="346" alt="">
+                        </div>
                         <div>
-                            <p class="p-point__subttl">オフライン視聴</p>
-                            <p class="p-point__txt">作品を事前にダウンロードしておけばいつでも視聴が可能になります。</p>
+                            <p class="p-point__subttl fade_bottom2">オフライン視聴</p>
+                            <p class="p-point__txt fade_bottom3">作品を事前にダウンロードしておけば<br>いつでも視聴が可能になります。</p>
                         </div>
                     </section>
                 </section>
                 <section class="p-procedure">
                     <h2>簡単3ステップで登録</h2>
                     <ul>
-                        <li><img src="assets/images/step_1.png" height="320" width="320" alt=""></li>
-                        <li><img src="assets/images/step_2.png" height="320" width="320" alt=""></li>
-                        <li><img src="assets/images/step_3.png" height="320" width="320" alt=""></li>
+                        <li class="fade_bottom1"><img src="assets/images/step_1.png" height="320" width="320" alt="">
+                        </li>
+                        <li class="fade_bottom2"><img src="assets/images/step_2.png" height="320" width="320" alt="">
+                        </li>
+                        <li class="fade_bottom3"><img src="assets/images/step_3.png" height="320" width="320" alt="">
+                        </li>
                     </ul>
-                    <div class="c-btn__main"><a href="#">今すぐ無料体験してみる</a></div>
+                    <div class="c-btn__main fade_bottom2"><a href="#">今すぐ無料体験してみる</a></div>
                 </section>
                 <section class="p-question">
                     <h2>よくあるご質問</h2>
 
-                    <div class="c-accordion">
+                    <div class="c-accordion fade_bottom2">
                         <div class="c-accordion__option">
                             <input type="checkbox" id="toggle1" class="c-accordion__toggle">
                             <label class="title" for="toggle1">すべての作品が見放題ですか？</label>
@@ -288,7 +295,6 @@
         </main>
     </section>
 
-
     <footer>
         <section class="l-footer">
             <div class="l-footer__sns">
@@ -309,6 +315,29 @@
             <div class="l-footer__copy">&copy; Dwath.All Rights Reserved.</div>
         </section>
     </footer>
+    <script>
+        ScrollReveal().reveal(".fade_bottom1", {
+            delay: 100,             //開始時間
+            duration: 1800,         //完了にかかる時間
+            origin: "bottom",       //方向
+            distance: "30px",       //距離
+            reset: false,           //フレームインの度に動かすか
+        });
+        ScrollReveal().reveal(".fade_bottom2", {
+            delay: 400,
+            duration: 1800,
+            origin: "bottom",
+            distance: "30px",
+            reset: false,
+        });
+        ScrollReveal().reveal(".fade_bottom3", {
+            delay: 700,
+            duration: 1800,
+            origin: "bottom",
+            distance: "30px",
+            reset: false,
+        });
+    </script>
     <script>
         $('.c-slider__slider').slick({
             speed: 800,             //スライドするスピード

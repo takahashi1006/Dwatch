@@ -1,17 +1,21 @@
 .p-point{
-    width: $width_main_inside;
+    width: $width_main_inside - 200px;
     margin: 0 auto;
     &__wrap_1,&__wrap_2,&__wrap_3{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         padding-bottom: 100px;
         .p-point__subttl{
-            font-size: 1.5em;
+            font-size: 2em;
             font-weight: 500;
+            width: 346px;
         }
         .p-point__txt{
-            width:346px;
+            font-size: 1.2em;
+            padding-top: 10px;
+            line-height: 1.8em;
+            width: 346px;
         }
     }
     &__wrap_1,&__wrap_3{

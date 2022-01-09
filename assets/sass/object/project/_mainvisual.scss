@@ -1,35 +1,42 @@
-.p-mainvisual{
+.p-mainvisual {
     margin-left: -60px;
     margin-right: -10px;
     position: relative;
     text-align: center;
     overflow: hidden;
-    &__img img{
+    &__img img {
         filter: brightness(20%);
         height: 100vh;
     }
-    &__txt{
+    &__txt {
         position: absolute;
         top: 50%;
         left: 50%;
-        -ms-transform: translate(-50%,-50%);
-        -webkit-transform: translate(-50%,-50%);
-        transform: translate(-50%,-50%);
-        margin:0;
-        padding:0;
-        p{
-            font-size: 1.5em;
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 0;
+        .p-mainvisual__txt1 {
+            letter-spacing: 2px;
+            span {
+                font-size: 2em;
+            }
+        }
+        p {
+            font-size: 1.2em;
             padding-bottom: 30px;
         }
-        img{
+
+        img {
             padding: 0 0 50px 0;
         }
-        .p-mainvisual__login{
+        .p-mainvisual__login {
             font-size: 1em;
             padding-top: 20px;
-            a{
+            a {
                 text-decoration: underline;
-                &:hover{
+                &:hover {
                     color: $color_accent;
                 }
             }
