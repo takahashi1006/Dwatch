@@ -20,3 +20,9 @@
         font-size: 0.8em;
     }
 }
+@media screen and (max-width: 1024px) {
+    /*　画面サイズが1024pxからはここを読み込む　*/
+    .c-search {
+        display: none;
+    }
+}

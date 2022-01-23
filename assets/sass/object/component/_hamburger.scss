@@ -1,0 +1,83 @@
+.nav_toggle,
+.nav {
+  display: none;
+}
+
+@media screen and (max-width: 678px) {
+  /* ハンバーガーのマーク */
+  .nav_togglewrap{
+    text-align: left;
+    margin-top: -75px;
+  }
+  .nav_toggle {
+    margin: 25px;
+    display: inline-block;
+    position: relative;
+    width: 1.75rem;
+    height: 1.5rem;
+    z-index: 2;
+  }
+  .nav_toggle i {
+    display: inline-block;
+    width: 100%;
+    border-radius: 2px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  .nav_toggle i:nth-child(1) {
+    top: 0;
+  }
+  .nav_toggle i:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .nav_toggle i:nth-child(3) {
+    bottom: 0;
+  }
+
+  /* クリックされた後のハンバーガーのマーク */
+  .nav_toggle.show i:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+  }
+  .nav_toggle.show i:nth-child(2) {
+    opacity: 0;
+  }
+  .nav_toggle.show i:nth-child(3) {
+    transform: translateY(-12px) rotate(45deg);
+  }
+
+  /* クリックで表示されるメニュー：クリックされる前 */
+  .nav {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+    background-color: $color_main;
+    z-index: 1;
+  }
+  .nav_menu_li {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    text-align: left;
+  }
+  .nav_menu_li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* クリックで表示されるメニュー：クリックされた後 */
+  .nav.show {
+    opacity: 1;
+    visibility: visible;
+  }
+}

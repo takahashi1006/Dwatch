@@ -10,8 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-    <!--js-->
-    <script src="assets/js/common.js"></script>
     <!--スライダー見た目-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
     <link rel="stylesheet" type="text/css"
@@ -23,6 +21,8 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <!--フェードイン-->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <!--ハンバーガー-->
+
     <!--js-->
     <script type="text/javascript" src="js/slick.min.js"></script>
     <!--ビューポート-->
@@ -57,6 +57,25 @@
                     <li class="c-btn__square"><a href="#">海外ドラマ</a></li>
                     <li class="c-btn__square"><a href="#">お問い合わせ</a></li>
                 </ul>
+                <section class="c-hamburger">
+                    <div class="nav_togglewrap">
+                        <span class="nav_toggle">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </span>
+                    </div>
+                    <nav class="nav">
+                        <ul class="nav_menu_ul">
+                            <li class="nav_menu_li"><a href="#">ホーム</a></li>
+                            <li class="nav_menu_li"><a href="#">ランキング</a></li>
+                            <li class="nav_menu_li"><a href="#">おすすめ</a></li>
+                            <li class="nav_menu_li"><a href="#">国内ドラマ</a></li>
+                            <li class="nav_menu_li"><a href="#">海外ドラマ</a></li>
+                            <li class="nav_menu_li"><a href="#">お問い合わせ</a></li>
+                        </ul>
+                    </nav>
+                </section>
             </section>
         </header>
         <main>
@@ -368,6 +387,11 @@
                 }
             }
             ]
+        });
+    </script>
+    <script>/*ハンバーガー*/
+        $(".nav_toggle").on("click", function () {
+            $(".nav_toggle, .nav").toggleClass("show");
         });
     </script>
 </body>

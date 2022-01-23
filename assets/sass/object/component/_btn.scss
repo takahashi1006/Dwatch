@@ -48,7 +48,8 @@
     /*　画面サイズが1024pxからはここを読み込む　*/
     .c-btn {
         &__normal {
-            display: inline-block;
+            display: none;
+            /*display: inline-block;*/
             text-align: center;
             padding: 20px 50px;
             border-radius: 50px;
@@ -59,7 +60,8 @@
             }
         }
         &__skeleton {
-            display: inline-block;
+            display: none;
+            /*display: inline-block;*/
             text-align: center;
             padding: 20px 50px;
             border-radius: 50px;
@@ -70,7 +72,8 @@
             }
         }
         &__square {
-            display: inline-block;
+            display: none;
+            /*display: inline-block;*/
             margin: 0 -10px;
             padding: 20px 10px;
             &:hover {

@@ -3,7 +3,7 @@
     text-align: center;
     overflow: hidden;
     &__img img {
-        filter: brightness(20%);
+        filter: brightness(30%);
         width: 100vw;
         height: 100vh;
         object-fit: cover;
@@ -46,6 +46,7 @@
 @media screen and (max-width: 1024px) {
     /*　画面サイズが1024pxからはここを読み込む　*/
     .p-mainvisual {
+        clear: both;
         margin-left: -20px;
         margin-right: -20px;
         position: relative;
@@ -74,7 +75,6 @@
                 font-size: 1.2em;
                 padding-bottom: 30px;
             }
-
             img {
                 padding: 0 0 50px 0;
             }
@@ -90,4 +90,19 @@
             }
         }
     }
+}
+@media screen and (max-width: 678px) {
+    .p-mainvisual {
+        &__txt {
+            .p-mainvisual__txt1 {
+                font-size: 0.7em;
+            }
+            img {
+                width: 70%;
+            }
+            .p-mainvisual__login {
+                font-size: 0.6em;
+            }
+    }
+}
 }
