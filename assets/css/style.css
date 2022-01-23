@@ -869,18 +869,23 @@ h2 {
   }
 }
 
-.nav_toggle,
-.nav {
+.c-hamburger .nav_toggle,
+.c-hamburger .nav {
   display: none;
 }
 
 @media screen and (max-width: 678px) {
-  /* ハンバーガーのマーク */
-  .nav_togglewrap {
+  .c-hamburger {
+    /* ハンバーガーのマーク */
+    /* クリックされた後のハンバーガーのマーク */
+    /* クリックで表示されるメニュー：クリックされる前 */
+    /* クリックで表示されるメニュー：クリックされた後 */
+  }
+  .c-hamburger .nav_togglewrap {
     text-align: left;
     margin-top: -75px;
   }
-  .nav_toggle {
+  .c-hamburger .nav_toggle {
     margin: 25px;
     display: inline-block;
     position: relative;
@@ -888,7 +893,7 @@ h2 {
     height: 1.5rem;
     z-index: 2;
   }
-  .nav_toggle i {
+  .c-hamburger .nav_toggle i {
     display: inline-block;
     width: 100%;
     border-radius: 2px;
@@ -900,31 +905,29 @@ h2 {
     transition: transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
   }
-  .nav_toggle i:nth-child(1) {
+  .c-hamburger .nav_toggle i:nth-child(1) {
     top: 0;
   }
-  .nav_toggle i:nth-child(2) {
+  .c-hamburger .nav_toggle i:nth-child(2) {
     top: 0;
     bottom: 0;
     margin: auto;
   }
-  .nav_toggle i:nth-child(3) {
+  .c-hamburger .nav_toggle i:nth-child(3) {
     bottom: 0;
   }
-  /* クリックされた後のハンバーガーのマーク */
-  .nav_toggle.show i:nth-child(1) {
+  .c-hamburger .nav_toggle.show i:nth-child(1) {
     -webkit-transform: translateY(10px) rotate(-45deg);
             transform: translateY(10px) rotate(-45deg);
   }
-  .nav_toggle.show i:nth-child(2) {
+  .c-hamburger .nav_toggle.show i:nth-child(2) {
     opacity: 0;
   }
-  .nav_toggle.show i:nth-child(3) {
+  .c-hamburger .nav_toggle.show i:nth-child(3) {
     -webkit-transform: translateY(-12px) rotate(45deg);
             transform: translateY(-12px) rotate(45deg);
   }
-  /* クリックで表示されるメニュー：クリックされる前 */
-  .nav {
+  .c-hamburger .nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -946,17 +949,16 @@ h2 {
     background-color: #2c2c2c;
     z-index: 1;
   }
-  .nav_menu_li {
+  .c-hamburger .nav_menu_li {
     margin-bottom: 30px;
     padding-bottom: 20px;
     text-align: left;
   }
-  .nav_menu_li a {
+  .c-hamburger .nav_menu_li a {
     color: #fff;
     text-decoration: none;
   }
-  /* クリックで表示されるメニュー：クリックされた後 */
-  .nav.show {
+  .c-hamburger .nav.show {
     opacity: 1;
     visibility: visible;
   }
